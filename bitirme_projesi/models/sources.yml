@@ -7,7 +7,7 @@ sources:
     tables:
       - name: gayri_safi_yurt_ici_hasila_clean_data
         columns:
-          - name: province
+          - name: city
             tests:
               - not_null
           - name: year
@@ -27,23 +27,22 @@ sources:
 
       - name: hekim_sayilari_clean_data
         columns:
-          - name: province
+          - name: date
             tests:
               - not_null
-          - name: year
+          - name: physician_count
             tests:
               - not_null
-          - name: doctor_count
 
       - name: saglik_sigortasi_police_sayisi_clean_data
         columns:
-          - name: province
+          - name: date
             tests:
               - not_null
-          - name: year
+          - name: dual
             tests:
               - not_null
-          - name: police_count
+          - name: illness
     
       - name: nufus_sayisi_clean_data
         columns:
