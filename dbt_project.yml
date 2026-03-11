@@ -15,9 +15,3 @@ target-path: "target"
 clean-targets:
   - "target"
   - "dbt_packages"
-
-models:
-  bitirme_projesi_datalari:
-    staging:
-      +materialized: table
-      +schema: bitirme_projesi_datalari
