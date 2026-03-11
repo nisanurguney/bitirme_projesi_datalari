@@ -13,7 +13,7 @@ sources:
           - name: year
             tests:
               - not_null
-          - name: hasil
+          - name: hasila
 
       - name: hastane_yatak_sayilarinin_illere_gore_dagilimi_clean_data
         columns:
