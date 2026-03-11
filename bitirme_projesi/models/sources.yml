@@ -1,0 +1,46 @@
+version: 2
+
+sources:
+  - name: saglik
+    database: workintech-projelerim
+    schema: bitirme_projesi_datalari
+    tables:
+      - name: gayri_safi_yurt_ici_hasila_clean_data
+        columns:
+          - name: province
+            tests:
+              - not_null
+          - name: year
+            tests:
+              - not_null
+          - name: hasil
+
+      - name: hastane_yatak_sayilarinin_illere_gore_dagilimi_clean_data
+        columns:
+          - name: province
+            tests:
+              - not_null
+          - name: year
+            tests:
+              - not_null
+          - name: beds
+
+      - name: hekim_sayilari_clean_data
+        columns:
+          - name: province
+            tests:
+              - not_null
+          - name: year
+            tests:
+              - not_null
+          - name: doctor_count
+
+      - name: saglik_sigortasi_police_sayisi_clean_data
+        columns:
+          - name: province
+            tests:
+              - not_null
+          - name: year
+            tests:
+              - not_null
+          - name: police_count
